@@ -1,0 +1,220 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher edu info</title>
+    <link rel="stylesheet" href="assets2/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets2/css/styles.css">
+    <link rel="stylesheet" href="assets6/css/styles.css" type="text/css"/>
+<script src="assets1/js/app1.js"></script>
+    <script type='text/javascript' src='assets2/js/app.js'></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-star"></i>Educational System</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="index.html">Home </a></li>
+                    <li class="active" role="presentation"><a href="TeacherLogin.html">Teacher's Desk</a></li>
+                    <li role="presentation"><a href="Contact.html">Help </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<h1>Teacher Personal Information</h1><br><br>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <form action="Teacher_education">
+                 <div class="row">
+                    <div class="col-md-4">
+                        <label>Teacher ID</label>
+                    </div>
+                    <div class="col-md-5">
+                        <input class="form-control" type="number" required="" name='id'><br>
+                    </div><br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <fieldset>
+                            <legend>10th </legend>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>School Name</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="text" required="" name="sname"><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>10th Percentage</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" required="" name="ssc"><span>Do not enter % sign</span><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Passing Year</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" required="" name="p_yr"><br>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+          
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <fieldset>
+                            <legend>12th </legend>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>College Name</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="text" required="" autofocus="" name="clg_name"><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>12th Percentage</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" name="hsc"><span>Do not enter % sign</span><br>
+                                    
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Passing Year</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" required="" name="passing_yr"><br>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+          
+                    <div class="row">
+                    <div class="col-md-12">
+                        <fieldset>
+                            <legend>UG </legend>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>College Name</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="text" required="" autofocus="" name="cname"><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Department </label>
+                                </div>
+                                <div class="col-md-5">
+                                    <select class="form-control" name='dept' id="validate-select"  required>
+                            <option value="">Select an item</option>
+                            <option value="Comp">Computer</option>
+                            <option value="I.T">Information Technology</option>
+                            <option value="mech">Mechanical</option>
+                            <option value="elec">Electrical</option>
+                            <option value="civil">Civil</option>
+                            
+                        </select><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>First Year Percentage</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" name="fe"><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Second Year Percentage</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" name="se"><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Third Year Percentage</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" name="te"><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Fourth Year Percentage</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" name="be"><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Passing Year</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" required="" name="year"><br>
+                                </div>
+                                
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <fieldset>
+                            <legend>PG </legend>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>College Name</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="text" required="" autofocus="" name="c_name"><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Department </label>
+                                </div>
+                                <div class="col-md-5">
+                                     <select class="form-control" name='dep' id="validate-select"  required>
+                            <option value="">Select an item</option>
+                            <option value="Comp">Computer</option>
+                            <option value="I.T">Information Technology</option>
+                            <option value="mech">Mechanical</option>
+                            <option value="elec">Electrical</option>
+                            <option value="civil">Civil</option>
+                            
+                        </select><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>First Year Percentage</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" required="" name="f_yr"><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Second Year Percentage</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" required="" name="s_yr"><br>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Passing Year</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="number" required="" name="pass"><br>
+                                </div>
+                                <div class="col-md-9"></div>
+                                <div class="col-md-2 col-md-offset-9">
+                                    <button class="btn btn-next tab3" type="submit">Save </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                    </div>
+            </form>
+        
+    </div>
+    <script src="assets2/js/jquery.min.js"></script>
+    <script src="assets2/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

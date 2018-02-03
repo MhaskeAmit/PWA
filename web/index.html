@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EduLite</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Education Hub Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link href="assets9/css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="assets9/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="assets9/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<!-- //css files -->
+<script src="assets1/js/app1.js"></script>
+<!-- online-fonts -->
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900iSource+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<!-- js -->
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css">
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD8NlWUyXOAK3EIppyOJCsintPHvzHs4ow",
+    authDomain: "progressive-web-app-for-edu.firebaseapp.com",
+    databaseURL: "https://progressive-web-app-for-edu.firebaseio.com",
+    projectId: "progressive-web-app-for-edu",
+    storageBucket: "",
+    messagingSenderId: "624145665"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="assets9/js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<script type="text/javascript" src="assets9/js/bootstrap-3.1.1.min.js"></script>
+<link rel="manifest" href="manifest.json">
+
+		<script src="assets9/js/jquery.chocolat.js"></script>
+		<link rel="stylesheet" href="assets9/css/chocolat.css" type="text/css" media="screen">
+		<!--light-box-files -->
+		<script>
+		$(function() {
+			$('.gallery-grid a').Chocolat();
+		});
+		</script>
+
+<!-- //js -->
+<script src="assets9/js/responsiveslides.min.js"></script>
+		<script>
+				$(function () {
+					$("#slider").responsiveSlides({
+						auto: true,
+						pager:false,
+						nav: true,
+						speed: 1000,
+						namespace: "callbacks",
+						before: function () {
+							$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+						}
+					});
+				});
+			</script>
+			
+
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="assets9/js/move-top.js"></script>
+<script type="text/javascript" src="assets9/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+
+
+</head>
+<body>
+<div class="header" id="home">
+	<div class="logo">
+		<a href="#"><h1>Educational System</h1></a>
+	</div>
+<!-- navigation -->
+		<div class="ban-top-con">
+			<div class="top_nav_left">
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+					  <ul class="nav navbar-nav menu__list">
+						<li class="active menu__item menu__item--current"><a class="menu__link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+						<li role="presentation"><a href="adminlogin.html" class="menu__link">Admin</a></li>
+						<li class="dropdown"><a class="dropdown-toggle menu__link scroll" data-toggle="dropdown" aria-expanded="false" href="#">Student's Desk <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="Student_personal.html">Registration</a></li>
+                            <li><a href="StudLogin.html">Login</a></li>
+                           
+                        </ul>
+                    <li class="dropdown"><a class="dropdown-toggle menu__link scroll" data-toggle="dropdown" aria-expanded="false" href="#">Teacher's Desk <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="Teacher_personal.html">Registration</a></li>
+                            <li><a href="TeacherLogin.html">Login</a></li>
+                           
+                        </ul>
+						
+						<li role="presentation"><a href="Help.html">Help</a></li>
+                                                
+					  </ul>
+					</div>
+				  </div>
+				</nav>	
+				
+			</div>
+			<div class="clearfix"></div>
+			</div>
+	<!-- //navigation -->
+<!-- Slider -->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider">
+					<li>
+						<div class="slider-img">
+							<img src="assets9/images/bg2.jpg" class="img-responsive" alt="education">
+						</div>
+						<div class="slider-info">
+							<h3>Education</h3>
+							<p>Education is the most powerful weapon which you can use to change the world.</p>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img">
+							<img src="assets9/images/bg3.jpg" class="img-responsive" alt="education">
+						</div>
+						<div class="slider-info">
+							<h3>Education</h3>
+							<p>The purpose of education is to replace   an empty mind with an open one.</p>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img">
+							<img src="assets9/images/bg1.jpg" class="img-responsive" alt="education">
+						</div>
+						<div class="slider-info">
+							<h3>Education</h3>
+							<p>Education is the most powerful weapon which you can use to change the world.</p>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img">
+							<img src="assets9/images/bg4.jpg" class="img-responsive" alt="education">
+						</div>
+						<div class="slider-info">
+							<h3>Education</h3>
+							<p>The purpose of education is to replace   an empty mind with an open one.</p>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img">
+							<img src="assets9/images/bg5.jpg" class="img-responsive" alt="education">
+						</div>
+						<div class="slider-info">
+							<h3>Education</h3>
+							<p>The goal of education is the advancement of knowledge and the dissemination of truth.</p>
+						</div>
+                                        </li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!-- //Slider -->
+</div>
+    
+    
+<!--main-content-->
+<!--//welcome-->
+
+<!--activities-->
+
+<!--footer-->
+<div class="w3l-footer">
+	<div class="container">
+		
+		<div class="clearfix"></div>
+		
+		<div class="copyright-agile">
+			<p>&copy; 2017-18. EduLite All rights reserved </p>
+                         <div class="floating-button mdl-5">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
+                id="share-image-button">
+          <i class="material-icons">add</i>
+          
+        </button>
+            <style>
+            floating-button {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+}
+        </style>
+      </div>
+		</div>
+	</div>
+</div>
+<!--//footer-->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+                
+	</script>
+       
+
+        <div id="confirmation-toast" aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button type="button" class="mdl-snackbar__action"></button>
+      </div>
+
+        
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>

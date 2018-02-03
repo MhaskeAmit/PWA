@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="multipart/form-data" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal info</title>
+    <link rel="stylesheet" href="assets2/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets2/css/styles.css">
+    <link rel="stylesheet" href="assets6/css/styles.css" type="text/css"/>
+<script src="assets1/js/app1.js"></script>
+    <script type='text/javascript' src='assets2/js/app.js'></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-star"></i>Educational System</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="index.html">Home </a></li>
+                    <li class="active" role="presentation"><a href="TeacherLogin.html">Student's Desk</a></li>
+                    <li role="presentation"><a href="Contact.html">Help </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<h1>Teacher Personal Information</h1><br><br>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <form action="./teacherRegi"  method="post" name="TeacherRegistration" enctype="multipart/form-data" onblur="return(validate());">
+                <fieldset>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Teacher ID</label>
+                    </div>
+                    <div class="col-md-5">
+                        <input class="form-control" type="number" required="" name='t_id'><br>
+                    </div><br>
+                    <div class="col-md-4">
+                        <label>First Name</label>
+                    </div><br>
+                    <div class="col-md-5">
+                        <input class="form-control" name='t_fname' type="text" required="" ><br>
+                    </div><br>
+                    <div class="col-md-4">
+                        <label>Last Name</label>
+                    </div><br>
+                    <div class="col-md-5">
+                        <input class="form-control" name='t_lname' type="text" required="" ><br>
+                    </div><br>
+                    <div class="col-md-4">
+                        <label>Address: </label>
+                    </div><br>
+                    <div class="col-md-5">
+                        <textarea class="form-control" name='t_address' placeholder="Enter address here....." required></textarea><br>
+                    </div><br>
+                    <div class="col-md-4">
+                        <label>Permanent Address</label>
+                    </div><br>
+                    <div class="col-md-5">
+                        <textarea class="form-control" name='t_permanet_address' placeholder="Enter permanent address....." required></textarea><br>
+                    </div><br>
+                    <div class="col-md-4">
+                        <label for="phone">Mobile Number</label>
+                    </div><br>
+                    <div class="col-md-5">
+                        <input class="form-control" name='t_mobile' type="tel" required="" autocomplete="on" ><br>
+                        <span id="error_phone" class="text-danger"></span>
+                    </div><br>
+                    <div class="col-md-4">
+                        <label>Email address</label>
+                    </div><br>
+                    <div class="col-md-5">
+                        <input class="form-control" name='t_email' type="email" required="" data-error="Email address is invalid!!!!"><br>
+                    </div><br>
+                    
+                    <div class="col-md-4">
+                        <label for="dob">Birth Date</label>
+                    </div><br>
+                    <div class="col-md-5">
+                        <input class="form-control" name='t_birthdate' type="date" required=""><br>
+                        <span id="error_dob" class="text-danger"></span>
+                    </div><br>
+                    <div class="col-md-4">
+                        <label>Gender </label>
+                    </div><br>
+                    <div class="col-md-5">
+                        <select class="form-control" name='t_gender' id="validate-select"  required>
+                            <option value="">Select an item</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            
+                        </select><br>
+                    </div><br>
+                    <div class="col-md-4">
+                        <label>Upload Photo</label>
+                    </div><br>
+                    <div class="col-md-5">
+                        <input type="file" name="t_pic" accept="image/*" required="">
+                    </div><br>
+                    <div class="col-md-9 col-md-offset-10">
+                        <button class="btn btn-next" type="submit">Save </button>
+                    </div><br>
+                </div>
+                </fieldset>
+            </form>
+        </div>
+        </div>
+<script src="sw.js"></script>
+    <script src="assets2/js/jquery.min.js"></script>
+    <script src="assets2/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
