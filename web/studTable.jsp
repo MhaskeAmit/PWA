@@ -20,6 +20,12 @@
     <link href="assets8/css/light-bootstrap-dashboard.css?v=2.0.1" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="assets8/css/demo.css" rel="stylesheet" />
+    <script src="assets1/js/fetch.js"></script>
+    <script src="assets1/js/promise.js"></script>
+    <script src="assets1/js/app1.js"><script>
+        <script src="/sw.js"></script>
+    
+       
     <script>
             function personal(i)
             {

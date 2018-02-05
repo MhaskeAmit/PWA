@@ -1,12 +1,17 @@
+"use strict"
+
 var CACHE_STATIC_NAME='static'
+var CACHE_DYNAMIC_NAME='dynamic'
+
+
+
 self.addEventListener('install',function(event){
     console.log('[Service Worker] Installing service worker....',event);
     event.waitUntil(
             caches.open(CACHE_STATIC_NAME)
             .then(function(){
                 console.log('[Service Worker] precaching app shell');
-                cache.addAll([
-                    '/',
+              return cache.addAll( ['/',
                     '/web/index.html',
                     '/web/offline.html',
                     '/web/adminlogin.html',
@@ -58,8 +63,9 @@ self.addEventListener('install',function(event){
                     
                     '/web/assets1/js/fetch.js',
                     '/web/assets1/js/promise.js'
-                    
-                ]);
+              ]).then(function() {
+            return self.skipWaiting();
+        });
                 
                 
             })
@@ -67,6 +73,17 @@ self.addEventListener('install',function(event){
 });
 self.addEventListener('activate', function(event) {
   console.log('[Service Worker] Activating Service Worker ....', event);
+  event.waitUntil(
+    caches.keys()
+      .then(function(keyList) {
+        return Promise.all(keyList.map(function(key) {
+          if (key !== CACHE_STATIC_NAME && key !== CACHE_DYNAMIC_NAME) {
+            console.log('[Service Worker] Removing old cache.', key);
+            return caches.delete(key);
+          }
+        }));
+      })
+  );
   return self.clients.claim();
 });
 
@@ -79,9 +96,9 @@ self.addEventListener('fetch', function(event) {
         } else {
           return fetch(event.request)
             .then(function(res) {
-              return caches.open('dynamic')
+              return caches.open(CACHE_DYNAMIC_NAME)
                 .then(function(cache) {
-                  cache.put(event.request.url, res.clone());
+                  event.cache.put(event.request.url, res.clone());
                   return res;
                 })
             })

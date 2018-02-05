@@ -12,7 +12,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-       
+       <script src="assets1/js/fetch.js"></script>
+    <script src="assets1/js/promise.js"></script>
+    <script src="/sw.js"></script>
+        <script src="assets1/js/app1.js"><script>
+
     </head>
     <body>
             <%
